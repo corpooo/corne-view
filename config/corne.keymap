@@ -22,21 +22,25 @@
         jk_combo {
             bindings = <&hmr RS(RGUI) ESC>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         df_combo {
-            bindings = <&hml LS(LGUI) RET>;
-            key-positions = <15 16>;
-        };
-
-        jl_combo {
-            bindings = <&hml RG(RALT) RET>;
-            key-positions = <21 19>;
-        };
-
-        sf_combo {
             bindings = <&hml LS(LGUI) ESC>;
-            key-positions = <14 16>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        jk_combo_symbs {
+            bindings = <&hmr RS(RGUI) BSPC>;
+            key-positions = <19 20>;
+            layers = <1>;
+        };
+
+        df_combo_symbs {
+            bindings = <&hml LS(LGUI) SPACE>;
+            key-positions = <15 16>;
+            layers = <1>;
         };
     };
 
@@ -69,15 +73,6 @@
             hold-trigger-key-positions = <36 37 38 39 40 41 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
 
-        bspc_del: bspc_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSPC_DEL";
-            bindings = <&kp BSPC>, <&kp DEL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         rev_semi: rev_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "REV_SEMI";
@@ -100,38 +95,6 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <36 37 38 39 40 41 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
-
-        cmd_sft_esc: cmd_sft_esc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CMD_SFT_ESC";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
-            flavor = "balanced";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <36 37 38 39 40 41 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
-        comma_semi: comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMI";
-            bindings = <&kp COMMA>, <&kp SEMI>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            bindings = <&kp DOT>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     keymap {
@@ -141,9 +104,9 @@
             display-name = "Base";
             bindings = <
 &kp HOME    &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P              &kp END
-&lt 3 ESC   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr_semi LCTRL 0  &kp SQT
-&lt 4 LBKT  &lt 3 Z       &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &lt 3 SLASH        &lt 4 RBKT
-                                       &lt 3 BSPC   &lt 2 TAB     &lt 1 SPACE    &lt 1 BSPC  &lt 2 RET     &lt 3 DEL
+&lt 3 TAB   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr_semi LCTRL 0  &kp SQT
+&lt 5 LBKT  &lt 4 Z       &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &lt 4 SLASH        &lt 5 RBKT
+                                       &lt 4 BSPC   &lt 2 RET     &lt 1 SPACE    &lt 1 BSPC  &lt 2 RET     &kp DEL
             >;
             label = "Base";
         };
@@ -189,10 +152,20 @@
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7        &kp N8           &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp RIGHT  &trans  &trans
 &kp LSHFT   &out OUT_TOG  &trans        &trans        &trans        &trans          &trans    &kp C_BRI_DN  &kp C_BRI_UP     &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans        &kp RALT
+                                        &bootloader   &trans        &kp SPACE       &kp RET   &trans        &bootloader
+            >;
+            label = "Magic";
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Magic";
+            label = "Mouse";
         };
     };
 };
