@@ -123,7 +123,7 @@
 &trans  &kp PIPE         &kp AT          &kp UNDER       &kp DLLR         &kp PRCNT    &kp CARET  &kp PLUS         &kp ASTERISK    &kp GRAVE       &kp BACKSLASH    &trans
 &trans  &hml LCTRL AMPS  &hml LALT LPAR  &hml LGUI LBRC  &hml LSHFT LBKT  &kp EQUAL    &kp MINUS  &hmr RSHFT RBKT  &hmr RGUI RBRC  &hmr RALT RPAR  &hmr LCTRL SEMI  &kp DQT
 &trans  &trans           &kp HASH        &kp TILDE       &kp QMARK        &trans       &trans     &kp EXCL         &kp LT          &kp GT          &trans           &trans
-                                         &trans          &trans           &kp SPACE    &kp BSPC   &trans           &trans
+                                         &trans          &kp TAB          &kp SPACE    &kp BSPC   &trans           &trans
             >;
 
             label = "Symbls";
