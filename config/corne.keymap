@@ -133,7 +133,7 @@
             display-name = "Nav";
             bindings = <
 &trans  &trans  &trans         &trans         &trans          &trans    &trans    &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans
-&trans  &trans  &hml LALT ESC  &hml LGUI TAB  &hml LSHFT RET  &trans    &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT      &trans         &trans
+&trans  &trans  &hml LALT ESC  &hml LGUI RET  &hml LSHFT TAB  &trans    &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT      &trans         &trans
 &trans  &trans  &kp LG(X)      &kp LG(C)      &kp LG(V)       &trans    &trans    &kp LG(BSPC)  &kp LA(BSPC)  &kp LA(DEL)    &kp LG(DEL)    &trans
                                &kp DEL        &kp BSPC        &trans    &kp BSPC  &kp DEL       &trans
             >;
