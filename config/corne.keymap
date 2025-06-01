@@ -107,7 +107,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp HOME    &kp Q         &kp W        &lt 5 E      &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P              &kp END
+&kp HOME    &kp Q         &kp W        &lt 5 E      &kp R         &kp T          &kp Y       &kp U         &lt 5 I      &kp O        &kp P              &kp END
 &lt 2 ESC   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr_semi LCTRL 0  &kp SQT
 &lt 0 LBKT  &lt 3 Z       &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &lt 3 SLASH        &lt 0 RBKT
                                        &lt 4 BSPC   &lt 2 TAB     &lt 1 SPACE    &lt 1 BSPC  &lt 2 RET     &lt 4 DEL
@@ -173,15 +173,6 @@
             >;
 
             label = "Aero";
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
         };
     };
 };
