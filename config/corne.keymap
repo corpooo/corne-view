@@ -108,7 +108,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp HOME    &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P              &kp END
+&kp HOME    &kp Q         &kp W        &lt 6 E      &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P              &kp END
 &lt 2 ESC   &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr_semi LCTRL 0  &kp SQT
 &lt 5 LBKT  &lt 3 Z       &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &lt 3 SLASH        &lt 5 RBKT
                                        &lt 4 BSPC   &lt 2 TAB     &lt 1 SPACE    &lt 1 BSPC  &lt 2 RET     &lt 4 DEL
@@ -174,6 +174,17 @@
             >;
 
             label = "Mouse";
+        };
+
+        Windows {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp    &kp LA(F13)  &kp LA(F14)  &kp LA(F15)  &kp LA(F16)  &kp LA(F17)  &kp LA(F18)
+&kp  &kp  &kp  &kp  &kp  &kp    &kp LS(F13)  &kp LS(F14)  &kp LS(F15)  &kp LS(F16)  &kp LS(F17)  &kp LS(F18)
+&kp  &kp  &kp  &kp  &kp  &kp    &kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &kp LG(F18)
+               &kp  &kp  &kp    &kp F20      &kp          &kp
+            >;
+
+            label = "Wins";
         };
     };
 };
