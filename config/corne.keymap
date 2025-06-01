@@ -166,10 +166,10 @@
 
         Aerospace {
             bindings = <
-&kp  &kp      &kp      &kp      &kp      &kp        &kp LA(F13)           &kp LA(F14)  &kp LA(F15)  &kp LA(F16)  &kp LA(F17)  &kp LA(F18)
-&kp  &kp F13  &kp F14  &kp F15  &kp F16  &kp F17    &kp LS(F13)           &kp LS(F14)  &kp LS(F15)  &kp LS(F16)  &kp LS(F17)  &kp LS(F18)
-&kp  &kp      &kp F18  &kp F19  &kp F20  &kp        &kp LG(F13)           &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &kp LG(F18)
-                       &kp      &kp      &kp        &mt LS(LA(LGUI)) F20  &kp          &kp
+&trans  &trans   &trans   &trans   &trans   &trans     &kp LA(F13)           &kp LA(F14)  &kp LA(F15)  &kp LA(F16)  &kp LA(F17)  &kp LA(F18)
+&trans  &kp F13  &kp F14  &kp F15  &kp F16  &kp F17    &kp LS(F13)           &kp LS(F14)  &kp LS(F15)  &kp LS(F16)  &kp LS(F17)  &kp LS(F18)
+&trans  &trans   &kp F18  &kp F19  &kp F20  &trans     &kp LG(F13)           &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &kp LG(F18)
+                          &trans   &trans   &trans     &mt LS(LA(LGUI)) F20  &trans       &trans
             >;
 
             label = "Aero";
