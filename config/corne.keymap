@@ -46,6 +46,18 @@
             bindings = <&lt 3 ESC>;
             key-positions = <38 39>;
         };
+
+        f-thb_combo {
+            bindings = <&hml LS(SPACE) ESC>;
+            key-positions = <16 38>;
+            layers = <0>;
+        };
+
+        j-thb_combo {
+            bindings = <&hmr RS(BSPC) ESC>;
+            key-positions = <19 39>;
+            layers = <0>;
+        };
     };
 
     behaviors {
