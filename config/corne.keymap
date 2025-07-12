@@ -156,7 +156,7 @@
             display-name = "Nums";
             bindings = <
 &trans  &trans         &kp N7        &kp N8        &kp N9         &trans    &trans  &kp N7         &kp N8        &kp N9        &trans         &trans
-&trans  &hml LCTRL N0  &hml LALT N6  &hml LCMD N5  &hml LSHFT N4  &trans    &trans  &hmr RSHFT N4  &hmr RCMD N5  &hmr RALT N6  &hmr LCTRL N0  &trans
+&trans  &hml LCTRL N0  &hml LALT N4  &hml LCMD N5  &hml LSHFT N6  &trans    &trans  &hmr RSHFT N4  &hmr RCMD N5  &hmr RALT N6  &hmr LCTRL N0  &trans
 &trans  &trans         &kp N1        &kp N2        &kp N3         &trans    &trans  &kp N1         &kp N2        &kp N3        &trans         &trans
                                      &trans        &trans         &trans    &trans  &trans         &trans
             >;
