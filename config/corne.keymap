@@ -119,10 +119,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp HOME               &kp Q               &kp W        &kp E        &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P                   &kp END
-&kp SQT                &hml LCTRL A        &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr LCTRL COLON        &kp SQT
-&mt LC(LG(LALT)) LBKT  &mt LC(LS(LALT)) Z  &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &mt LC(LS(LALT)) SLASH  &mt LC(LG(LALT)) RBKT
-                                                        &lt 4 BSPC   &lt 2 TAB     &lt 3 SPACE    &lt 1 BSPC  &lt 2 RET     &lt 4 DEL
+&kp HOME                   &kp Q                &kp W        &kp E        &kp R         &kp T          &kp Y       &kp U         &kp I        &kp O        &kp P                    &kp END
+&hml LS(LC(LG(LALT))) SQT  &hml LCTRL A         &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G          &kp H       &hmr RSHFT J  &hmr RGUI K  &hmr RALT L  &hmr LCTRL COLON         &hmr LS(LC(LG(LALT))) SQT
+&hml LC(LG(LALT)) LBKT     &hml LC(LS(LALT)) Z  &kp X        &kp C        &kp V         &kp B          &kp N       &kp M         &kp COMMA    &kp DOT      &hmr LC(LS(LALT)) SLASH  &hml LC(LG(LALT)) RBKT
+                                                             &lt 4 BSPC   &lt 2 TAB     &lt 3 SPACE    &lt 1 BSPC  &lt 2 RET     &lt 4 DEL
             >;
 
             label = "Base";
